@@ -1,5 +1,5 @@
 apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRole1
+kind: ClusterRole
 metadata:
   labels:
     k8s-app: metrics-server
