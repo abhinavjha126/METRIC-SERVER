@@ -1,9 +1,18 @@
 # METRIC-SERVER
 ```bash
-Added in 
+Added in deployment.yaml
 nodeSelector: # configure the nodeSelector here to directly schedule pods to specific nodes
   node: cloudcore
 hostNetwork: true
+podAntiAffinity:
+  requiredDuringSchedulingIgnoredDuringExecution:
+    - labelSelector:
+        matchExpressions:
+          - key: kubeedge
+            operator: In
+            values:
+              - cloudcore
+      topologyKey: kubernetes.io/hostname
 ```  
 ```bash
 VERSION - v0.6.1
