@@ -1,5 +1,5 @@
 Added in deployment.yaml (This change is done so that metric server gets deployed on server on which cloudcore pods are running. ie. on hub1 and hub2)
-Metric Server has dependancy of iptables (kubectl get cm tunnelport -nkubeedge -oyaml)
+Metric Server has dependancy of iptables (kubectl get cm tunnelport -nkubeedge -oyaml->>> Server IP's are shown on which cloudcore pod are running)
 nodeSelector: # configure the nodeSelector here to directly schedule pods to specific nodes
         node: cloudcore
       hostNetwork: true
