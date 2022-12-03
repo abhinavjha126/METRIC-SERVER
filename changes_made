@@ -1,4 +1,4 @@
-Added in deployment.yaml
+Added in deployment.yaml (This change is done so that metric server gets deployed on server on which cloudcore pods are running. ie. on hub1 and hub2)
 nodeSelector: # configure the nodeSelector here to directly schedule pods to specific nodes
         node: cloudcore
       hostNetwork: true
