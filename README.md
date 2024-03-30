@@ -1,6 +1,12 @@
 # METRIC-SERVER
 ```bash
-To be added
+Service port changed from 443 to 80 to make it internal
+CURL NOW: curl -X GET https://metrics-server.kube-system:80/apis/metrics.k8s.io/v1beta1/pods --insecure
+```
+```bash
+Total Branches - 1
+
+v1.0 - mainly for kubeedge purpose
 ```  
 ```bash
 VERSION - v0.6.1
