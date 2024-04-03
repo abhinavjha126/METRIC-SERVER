@@ -11,7 +11,8 @@ v1.0 - mainly for kubeedge purpose
 ```bash
 VERSION - v0.6.1
 wget https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.6.1/components.yaml -O deploy.yaml
-Deployment Image - k8s.gcr.io/metrics-server/metrics-server:v0.6.1
+Deployment Image - k8s.gcr.io/metrics-server/metrics-server:v0.6.1 (same image as below)
+Zeblok Image - hub.docker.zeblok.com/zeblok/metrics-server:v0.6.1 (same image as above)
 ```
 Used in kubeedge
 ```bash
